@@ -10,7 +10,7 @@ void main() => runApp(MaterialApp(
       initialRoute: '/',
       routes: {
         '/': (context) => const Loading(),
-        '/homepage': (context) => const HomePage(),
+        '/homePage': (context) => const HomePage(),
         '/home': (context) => const Home(),
         '/liveTime': (context) => const LiveTime(),
         '/location': (context) => const ChooseLocation(),

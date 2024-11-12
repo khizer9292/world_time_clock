@@ -8,8 +8,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:world_time/main.dart';
-import 'package:world_time/pages/LiveTime.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

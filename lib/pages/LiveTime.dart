@@ -115,7 +115,7 @@ class _LiveTimeState extends State<LiveTime> {
                 _buildCountryButton('Australia'),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Row(
@@ -123,13 +123,15 @@ class _LiveTimeState extends State<LiveTime> {
               children: [
                 Theme(
                   data: Theme.of(context).copyWith(
-                      radioTheme: RadioThemeData(
-                          fillColor: MaterialStatePropertyAll(Colors.white))),
+                      radioTheme: const RadioThemeData(
+                          fillColor: WidgetStatePropertyAll(Colors.white))),
                   child: RadioMenuButton(
                     style: ButtonStyle(
-                        overlayColor: MaterialStatePropertyAll(Colors.white),
-                        backgroundColor: MaterialStatePropertyAll(Colors.blue),
-                        shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                        overlayColor:
+                            const WidgetStatePropertyAll(Colors.white),
+                        backgroundColor:
+                            const WidgetStatePropertyAll(Colors.blue),
+                        shape: WidgetStatePropertyAll(RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)))),
                     value: 'AM/PM',
                     groupValue: formatOfTime,
@@ -142,18 +144,20 @@ class _LiveTimeState extends State<LiveTime> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 30,
                 ),
                 Theme(
                   data: Theme.of(context).copyWith(
-                      radioTheme: RadioThemeData(
-                          fillColor: MaterialStatePropertyAll(Colors.white))),
+                      radioTheme: const RadioThemeData(
+                          fillColor: WidgetStatePropertyAll(Colors.white))),
                   child: RadioMenuButton(
                     style: ButtonStyle(
-                        overlayColor: MaterialStatePropertyAll(Colors.white),
-                        backgroundColor: MaterialStatePropertyAll(Colors.blue),
-                        shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                        overlayColor:
+                            const WidgetStatePropertyAll(Colors.white),
+                        backgroundColor:
+                            const WidgetStatePropertyAll(Colors.blue),
+                        shape: WidgetStatePropertyAll(RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)))),
                     value: '24 Hour',
                     groupValue: formatOfTime,
@@ -179,8 +183,8 @@ class _LiveTimeState extends State<LiveTime> {
     return ElevatedButton(
       style: ButtonStyle(
         backgroundColor:
-            MaterialStateProperty.all(isSelected ? Colors.red : Colors.blue),
-        minimumSize: MaterialStateProperty.all(const Size(150, 50)),
+            WidgetStateProperty.all(isSelected ? Colors.red : Colors.blue),
+        minimumSize: WidgetStateProperty.all(const Size(150, 50)),
       ),
       onPressed: () => _updateTimeZone(country),
       child: Text(
