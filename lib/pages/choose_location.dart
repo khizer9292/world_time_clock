@@ -42,12 +42,12 @@ class _ChooseLocationState extends State<ChooseLocation> {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.white,
           ),
         ),
-        title: Text(
+        title: const Text(
           'Choose a Location',
           style: TextStyle(color: Colors.white),
         ),

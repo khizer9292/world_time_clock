@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../services/World_time.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -60,8 +60,8 @@ class _HomePageState extends State<HomePage> {
                   },
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.blue),
-                    minimumSize: MaterialStateProperty.all(const Size(150, 50)),
+                        WidgetStateProperty.all<Color>(Colors.blue),
+                    minimumSize: WidgetStateProperty.all(const Size(150, 50)),
                   ),
                   child: const Text(
                     'LIVE TIME',
@@ -80,8 +80,8 @@ class _HomePageState extends State<HomePage> {
                   },
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.blue),
-                    minimumSize: MaterialStateProperty.all(const Size(150, 50)),
+                        WidgetStateProperty.all<Color>(Colors.blue),
+                    minimumSize: WidgetStateProperty.all(const Size(150, 50)),
                   ),
                   child: const Text(
                     'API Time',
